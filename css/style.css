@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* Menü */
+nav {
+    width: 20%;
+    min-width: 150px;
+    /* ekran küçüldükçe min alan belirleme */
+    /* max-width: 300px; ekran büyükdükçe max alan belirleme */
+    height: 700px;
+    /* bulunduğu alana göre yüksekliği % olarak almaz. içindeki alanın yüksekliğine göre belirler. */
+    background-color: blue;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav>a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+li a {
+    display: block;
+    line-height: 60px;
+    padding-left: 50px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main alanı */
+main {
+    /* width: calc(70% - 30px); */
+    width: 80%;
+    margin-left: 20%;
+    padding: 30px;
+    background-color: white;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+.hr {
+    width: 20%;
+    height: 7px;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+.arabosluk {
+    margin: 30px 0px;
+}
+
+.vitrin {
+    height: 1400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.vitrin img {
+    width: 40%;
+    height: 400px;
+}
+
+/* Form alanı */
+form * {
+    display: block;
+}
+
+form input {
+    width: 99%;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 5px;
+}
+
+/* formlarda hover gibi kullanılan checked css */
+#onay:checked+#yolla {
+    border: 2px solid green;
+}
+
+/* inputun içine girmek focus */
+input:focus {
+    border: 5px solid green;
+}

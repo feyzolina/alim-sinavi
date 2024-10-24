@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Deneme</title>
+    <style>
+        #content{
+            width: 70%; height: 1000px;
+            background-color: bisque;
+            margin-left: auto; margin-right: auto;
+            display: flex; /* flex yapının oluşturulması */
+            justify-content: flex-start; /* içeriklerin nasıl görüneceğini yatayda belirler */
+            flex-wrap: wrap;
+            align-items: baseline; /* pencere daraldıkça dikeyde sıralanma sağlama */
+            /* flex-direction: column-reverse; */ /* sütunda belirleme */
+        }
+
+        #content div{
+            width: 200px; height: 200px;
+            border: 3px solid yellow;
+            background-color: red;
+            font-size: 50px;        
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="content">
+        <!-- dizilim belirlenecekse order style flex'in içerisindekilere verilir. böylelikle istenilen farklı numara sıralaması yapılır. Order numarası olmayan sıralamaya dahil edilmeden baştan sıralama yapar. -->
+        <div style="order: 4;">A</div>
+        <div style="order: 1;">B</div>
+        <div style="order: 5;">C</div>
+        <div style="order: 2;">D</div>
+        <div style="order: 3;">E</div>
+    </div>
+
+
+
+</body>
+</html>
